@@ -5,9 +5,8 @@ import { Input } from "./ui/input";
 import { Button } from "./ui/button";
 import { Label } from "./ui/label";
 import createPerson from "@/lib/actions/people/createPerson";
-import { Alert, AlertTitle } from "./ui/alert";
 import { toast } from "sonner";
-import { DialogClose } from "./ui/dialog";
+
 
 export default function PersonCreate() {
   const [createState, createAction, createIsPending] = useActionState(

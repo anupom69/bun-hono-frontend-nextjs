@@ -3,6 +3,8 @@ import People from "@/components/People";
 import Rescheduler from "@/components/Rescheduler";
 import { Badge } from "@/components/ui/badge";
 
+export const dynamic = 'force-dynamic';
+
 export default async function page() {
   if (!process.env.BACKEND_URL) {
     return <p>Backend URL not found</p>;
