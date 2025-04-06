@@ -102,6 +102,7 @@ export default function MessageUpdateForm({
           </Label>
           <Input
             type="number"
+            step={0.01}
             min={0}
             name="sendAfter"
             defaultValue={message.sendAfter}
