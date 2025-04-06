@@ -15,8 +15,7 @@ const messageSchema = z.object({
     .string()
     .regex(/^8801\d{9}$/, "Invalid phone number format. Must be 8801XXXXXXXXX"),
   sendAfter: z
-    .number()
-    .min(1, "Send after is required and minimum after 1 day"), // Adjust type if necessary (e.g., date/time validation)
+    .number().min(0, "Send after is required and minimum after 0 day"), // Adjust type if necessary (e.g., date/time validation)
 });
 
 export default async function updateMessage(
