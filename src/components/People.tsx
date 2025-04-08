@@ -26,7 +26,7 @@ export default async function People() {
   }
   const people: People[] = await data.json();
   return (
-    <div className="cursor-pointer">
+    <div className="cursor-pointer mt-6 md:mt-0">
       <h2 className="text-xl font-bold mb-2">People : </h2>
       <ScrollArea className="max-h-[calc(100vh-180px)] overflow-y-auto pr-4 mb-3">
         {people.map((person: People) => (

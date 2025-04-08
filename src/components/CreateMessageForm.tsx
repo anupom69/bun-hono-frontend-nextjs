@@ -68,7 +68,7 @@ export default function MessageUpdateForm({ people }: { people: People[] }) {
           <Label htmlFor="sendAfter" className="font-bold">
             Send After (in days)
           </Label>
-          <Input type="number" min={1} name="sendAfter" />
+          <Input type="number" step={0.0001} min={0} name="sendAfter" />
         </div>
         {/* <DialogClose asChild> */}
           <Button type="submit" disabled={createIsPending} className="mt-4">

@@ -1,6 +1,7 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import reschedule from "@/lib/actions/reschedule/reschedule";
+import { Calendar } from "lucide-react";
 import { useActionState, useEffect } from "react";
 import { toast } from "sonner";
 
@@ -20,7 +21,7 @@ export default function Rescheduler() {
     }, [rescheduleState]);
   return (
     <form action={rescheduleAction}>
-      <Button disabled={rescheduleIsPending} variant="default" type="submit" className="cursor-pointer font-bold text-[16px]">Reschedule</Button>
+      <Button disabled={rescheduleIsPending} variant="default" type="submit" className="font-bold p-1 px-2"><Calendar /> Reschede</Button>
     </form>
   )
 }
