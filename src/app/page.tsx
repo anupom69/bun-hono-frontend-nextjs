@@ -2,7 +2,7 @@ import Messages from "@/components/Messages";
 import People from "@/components/People";
 import Rescheduler from "@/components/Rescheduler";
 import { Badge } from "@/components/ui/badge";
-import { Clock, Timer, TimerIcon } from "lucide-react";
+import { Clock } from "lucide-react";
 
 export const dynamic = 'force-dynamic';
 
